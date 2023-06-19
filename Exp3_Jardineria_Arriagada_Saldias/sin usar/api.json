@@ -1,0 +1,44 @@
+{
+    "categories": [
+      {
+        "idCategory": "1",
+        "strCategory": "Macetero",
+        "strCategoryDescription": "Macetero blanco hecho de greda color blanco con detalles rojos"
+      },
+      {
+        "idCategory": "2",
+        "strCategory": "Tierra con Hojas",
+        "strCategoryDescription": "Tierra de hojas de 40 kilos, ideal para cuidar tu jardín"
+      },
+      {
+        "idCategory": "3",
+        "strCategory": "Kit de Herramientas",
+        "strCategoryDescription": "Kit de herramientas, set profesional para ser tu propio jardinero ideal para principiantes"
+      },
+      {
+        "idCategory": "4",
+        "strCategory": "Semillas de Girasol",
+        "strCategoryDescription": "Paquete con 100 semillas de girasol"
+      },
+      {
+        "idCategory": "5",
+        "strCategory": "Regadera",
+        "strCategoryDescription": "Regadera de Jardinería"
+      },
+      {
+        "idCategory": "6",
+        "strCategory": "Guantes de jardinería",
+        "strCategoryDescription": "Guantes de jardinería"
+      },
+      {
+        "idCategory": "7",
+        "strCategory": "Pala",
+        "strCategoryDescription": "Pala de jardinería"
+      },
+      {
+        "idCategory": "8",
+        "strCategory": "Botas de goma",
+        "strCategoryDescription": "Botas de goma para caminar sobre la tierra"
+      }
+    ]
+}

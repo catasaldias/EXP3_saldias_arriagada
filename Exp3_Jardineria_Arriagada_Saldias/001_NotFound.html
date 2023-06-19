@@ -1,0 +1,115 @@
+<!--INICIO-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Interfaz</title>
+    <link rel="icon" href="img/logo.png"/> <!--LOGO EN LA PESTAÑA-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/estilos.css" rel="stylesheet">    
+</head>
+
+<body>
+    <!--BARRA-->
+    <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #343a40" id="barraNav">
+        <a href="1_Inicio.html" id="logoEMPRESA">
+            <img src="img/logo.png" alt="logoEMPRESA" width="60px">
+        </a>
+    <!--OPCIONES DE LA BARRA-->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="collapse navbar-collapse" id="opciones">
+                <ul class="navbar-nav">
+                    <li class="nav-item"> <!--target="_blank" class="btn btn-primary" ABRE OTRA PESTAÑA SIN CERRAR-->
+                        <a class="nav-link" href="1_Inicio.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="3_Productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="4_Carrito.html">Carrito</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="8_Donaciones.html">Donaciones</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!--BARRA DE BUSQUEDA DEL USUARIO-->
+            <form class="form-inline mt-2 mt-md-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="¿Qué buscas?" aria-label="Search" id="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="btnBuscar">Buscar</button>
+            </form>
+
+            <div><!--BOTÓN PARA QUE EL USUAIO INICIE SESIÓN-->
+                <a href="5_DatosUsuario.html" id="userBeautyGarden">
+                    <img src="img/icon/usuario.png" alt="userBeautyGarden" width="30PX">Iniciar sesión
+                </a>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="row jumbotron" id="NotFound">
+        <div class="">
+            <div>
+                <p style="justify-content: center;">
+                    <font size="10">
+                    Ups¡ No lo hemos encontrado
+                </font>
+                </p>
+                <img src="img/not_found.png" alt="Quiénes Somos" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+
+        <footer class="bg-dark text-white py-2">
+            <div class="container">
+                <div class="row" style="color: white;">
+                    <div class="col-md-3 text-uppercase d-flex align-items-center">
+                        <a href="#" class="text-reset">
+                            <img src="img/logo.png" width="300px" height="200px" alt="logoEMPRESA"
+                                class="img-logo mr-2">
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-12">
+                        <h5 class="font-weight-bold text-uppercase">Siguenos</h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="https://www.instagram.com" class="text-reset">
+                                    <img src="img/redes/instagram.png"></i>
+                                </a>
+                                <a href="https://facebook.com" class="text-reset">
+                                    <img src="img/redes/facebook.png"></i>
+                                </a>
+                                <a href="https://twitter.com/home" class="text-reset">
+                                    <img src="img/redes/twitter.png"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <h5 class="font-weight-bold text-uppercase">Contactanos</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="7_Escribenos.html" class="text-reset">(2) 2560 6900</a></li>
+                            <br>
+                            <li><a href="7_Escribenos.html" class="text-reset">beautygarden@gmail.com</a></li>
+                            <br>
+                            <li><a href="7_Escribenos.html" class="text-reset">Av. Esq. Blanca 501, 9251863 Maipú, Región Metropolitana</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+</body>
+
+</html>

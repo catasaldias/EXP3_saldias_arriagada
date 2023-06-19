@@ -1,0 +1,149 @@
+<!--usuario-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donaciones</title>
+    {% load static %}
+    <link rel="icon" href="{% static'img/logo.png"/> <!--aqui va el logo en la pestaña-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/estilos.css' %}" rel="stylesheet">  
+    <script src="js/validar.js"></script>  
+</head>
+
+<body>
+    <!--BARRA-->
+    <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #343a40" id="barraNav">
+        <a href="{% url  'inicio'}" id="logoEMPRESA">
+            <img src="{% static 'img/logo.png' %}" alt="logoEMPRESA" width="60px">
+        </a>
+    <!--OPCIONES DE LA BARRA-->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="collapse navbar-collapse" id="opciones">
+                <ul class="navbar-nav">
+                    <li class="nav-item"> <!--target="_blank" class="btn btn-primary" ABRE OTRA PESTAÑA SIN CERRAR-->
+                        <a class="nav-link" href="{% url  'inicio'}">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'productos' %}">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'carrito' %}">Carrito</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'donaciones'}%">Donaciones</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!--BARRA DE BUSQUEDA DEL USUARIO-->
+            <form class="form-inline mt-2 mt-md-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="¿Qué buscas?" aria-label="Search" id="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="btnBuscar">Buscar</button>
+            </form>
+
+            <div><!--BOTÓN PARA QUE EL USUAIO INICIE SESIÓN-->
+                <a href="{% url 'inicio'%}" id="userBeautyGarden">
+                    <img src="{% static 'img/icon/usuario.png'%}" alt="userBeautyGarden" width="30PX">Iniciar sesión
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <br><br>
+
+
+    <div class="container">
+        <h5>Gracias por Donar</h5>
+     <form id="crear-cuenta" method="post">
+
+     
+        <div class="form-group">
+            <label for="nom">Nombre </label>
+            <input type="text" id="nom" name="nom" required minlength="3" placeholder="..." 
+            class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="apellido">Apellidos</label>
+            <input type="text" id="apellido" name="apellido" required minlength="3"
+                placeholder="..." class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="correo">Correo</label>
+            <input type="email" id="correo" name="correo" required
+                minlength="9" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="pass3">Numero de tarjeta</label>
+            <input type="number" id="pass3" name="pass3" required
+            minlength="16" required maxlength="16" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="num">Monto a donar</label>
+            <input type="number" id="num" name="num" required
+            minlength="2" required maxlength="9" class="form-control">
+        </div>
+
+        <input type="submit" value="Enviar" id="enviar" class="btn btn-success">
+        
+     </form>
+    </div>
+
+    <footer class="bg-dark text-white py-2">
+        <div class="container">
+            <div class="row" style="color: white;">
+                <div class="col-md-3 text-uppercase d-flex align-items-center">
+                    <a href="#" class="text-reset">
+                        <img src="{% static 'img/logo.png' %}" width="300px" height="200px" alt="logoEMPRESA"
+                            class="img-logo mr-2">
+                    </a>
+                </div>
+                <div class="col-md-3 col-12">
+                    <h5 class="font-weight-bold text-uppercase">Siguenos</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            
+                                <img src="{% static 'img/redes/instagram.png' %}"></i>
+                           
+                            
+                                <img src="{% static 'img/redes/facebook.png' %}"></i>
+                           
+                           
+                                <img src="{% static 'img/redes/twitter.png' %}"></i>
+                            
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-6">
+                    <h5 class="font-weight-bold text-uppercase">Contactanos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="{% url 'escribenos'%}" class="text-reset">(2) 2560 6900</a></li>
+                        <br>
+                        <li><a href="{% url 'escribenos'%}" class="text-reset">beautygarden@gmail.com</a></li>
+                        <br>
+                        <li><a href="{% url 'escribenos' %}" class="text-reset">Av. Esq. Blanca 501, 9251863 Maipú, Región Metropolitana</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+</body>
+</html>

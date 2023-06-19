@@ -1,0 +1,267 @@
+/*Color página y letras #20B2AA
+Color elementos #a3ffd7
+Navbar/Footer 343a40*/
+
+body { /*COLOR DE FONDO*/
+  background-color: #20B2AA;
+  padding-top: 45px;
+  
+} 
+
+#logoBeautyGarden{ /*TAMAÑO LOGO*/
+  font-size: 20px;
+  text-decoration: none;
+  margin-right: 16px;
+  padding-top: 3px;
+}
+
+/*
+#logoBookStop img{ /*TAMAÑO IMAGEN
+  margin-right: 70px;
+  margin-bottom: 3px;
+}
+*/
+
+/*
+#logoBookStop:hover{ /*BARRA
+  filter: invert(42%) sepia(99%) saturate(2844%) hue-rotate(341deg) brightness(95%) contrast(91%);
+}
+*/
+
+.navbar{/*TAMAÑO BARRA*/
+  -webkit-box-shadow:0px 2px 2px #20B2AA;
+  -moz-box-shadow:0px 2px 2px #20B2AA;
+  box-shadow:0px 2px 2px #20B2AA;
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  transition: 0.3s;
+  width: 100%;
+  top: 0;
+}
+
+#carousel1{/*POSICIÓN CARRUSEL*/
+  position: relative;
+  z-index: 0;
+}
+
+
+#userBeautyGarden{ /*COLOR INICIO DE SESIÓN*/
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+#userBeautyGarden:hover{ /*RELLENO*/
+  color: #20B2AA;
+}
+
+#userBeautyGarden img{ /*TAMAÑO USUARIO*/
+  margin-right: 5px;
+  margin-bottom: 3px;
+}
+
+#Search:hover{ /*RELLENO */
+  background-color: #20B2AA; 
+  color: white;
+}
+
+
+#btnBuscar{
+  border-color: white; 
+  color: white;
+  margin-right: 20px;
+  margin-left: -5px;
+}
+
+#btnBuscar:hover{ /*RELLENO */
+  background-color: #20B2AA; 
+  color: white;
+}
+
+#NotFound{
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-bottom: 0;
+  background-color: #20B2AA;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: black;
+}
+
+#qSomos{
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-bottom: 0;
+  background-color: #a3ffd7;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: black;
+}
+
+#qSomos h1{
+  color: black;
+}
+
+#qSomos h2{
+  color: red;
+}
+
+#mision{ 
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-bottom: 0;
+  background-color: #a3ffd7;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: black;
+}
+
+#mision h1{
+  color: black;
+}
+
+#mision h2{
+  color: red;
+}
+
+#vision{
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-bottom: 0;
+  background-color: #a3ffd7;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: black;
+}
+
+#vision h1{
+  color: black;
+}
+
+#vision h2{
+  color: red;
+}
+.card{
+  -webkit-box-shadow: 0px 0px 4px #c5c5c5;
+  -moz-box-shadow: 0px 0px 4px red;
+  box-shadow: 0px 0px 4px red;
+  border-radius: 7px;
+  margin-bottom: 20px;
+  text-align: justify;
+  padding: 5px;
+  color: #596272;
+}
+
+.card img{
+  width: 180px;
+}
+
+div>h4{
+  color: black;
+} 
+
+.newsletter{
+  background-color: black;
+  color: white;
+  padding-bottom: 5px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 7px;
+  -webkit-box-shadow: 0px 0px 7px #c5c5c5;
+  -moz-box-shadow: 0px 0px 7px #c5c5c5;
+  box-shadow: 0px 0px 7px #818181;
+  align-items: center;
+  font-size: 18px;
+}
+
+#newsletter h2{
+  color: white;
+}
+
+#btnNewsletter{
+  background-color: red; 
+  border-color: red;
+}
+
+#btnNewsletter:hover{
+  background-color: red; 
+  background-color: red; 
+}
+
+#top10{
+  background-color: #ffffff;
+  padding: 20px 20px 20px 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+  -webkit-box-shadow: 0px 0px 4px #c5c5c5;
+  -moz-box-shadow: 0px 0px 4px #c5c5c5;
+  box-shadow: 0px 0px 4px #c5c5c5;
+  border-radius: 7px;
+  align-items: center;
+  color: #596272;
+}
+
+#top10 h3{
+  color: black;
+}
+
+footer{
+  padding: 20px;
+  color: #c5c5c5;
+  background-color: black;
+  height: 220px;
+  margin-top: 20px;
+}
+
+footer div p{
+  font-size: 12px;
+  color: #888888;
+  padding-top: 5px;
+  line-height: 10px;
+}
+
+.footerlogo{
+  float: left;
+  display: inline-flex;
+  margin-left: 10000px;
+}
+
+#linkFooter{
+  color: #c5c5c5;
+  text-decoration: none;
+}
+
+@media (max-width:991px){
+  header label{
+      display: block;
+  }
+  footer{
+    height: 500px;
+  }
+  .carousel-caption{
+    color: transparent;
+  }
+}   
+.grid {
+  display: grid;
+}
+.grid div{
+  
+  padding: 10px;
+}
+.grid div:hover{
+    border: 1px solid gold;
+
+}
+.error-control{
+  border: 1px solid red;
+}
+label.error{
+  color: red;
+  width: 250px;
+  font-size: 0.8em;
+  margin-top: -5px;
+  margin-bottom: 10px;
+}
